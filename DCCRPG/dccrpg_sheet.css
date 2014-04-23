@@ -1,0 +1,47 @@
+/*  Start General Style  */
+
+
+input[type="text"]{
+	outline: 0;
+	border: 3px solid #000000;
+}
+
+/*  End General Style  */
+
+/*  Start Character Information Box  */
+#character_info{
+	border:thin solid #000000;
+}
+
+/*  End Character Information Box  */
+
+
+
+/* Start Attribute Box */
+
+#attributes{
+	border: thin solid #000000;
+}
+
+.attribute {
+	width: 400px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+#attributes input[type="text"]{
+	width:35px;
+	padding: 5px;
+}
+
+label {
+	
+	display: inline-block;
+	min-width: 100px;
+	text-align: right;
+	margin-right: 10px;
+}
+
+/* End Attribute Box */
