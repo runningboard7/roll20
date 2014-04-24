@@ -3,14 +3,33 @@
 
 input[type="text"]{
 	outline: 0;
-	border: 3px solid #000000;
+	border: none;
 }
 
 /*  End General Style  */
 
+/* Start Sheets */
+
+#sheets{
+	width: 100%;
+}
+
+/* End Sheets */
+
+/* Start Sheet */
+#sheet{
+	width: 450px;
+}
+/* End Sheet */
+
+
+
 /*  Start Character Information Box  */
 #character_info{
 	border:thin solid #000000;
+}
+#character_info input[type="text"]{
+	border-bottom: 3px solid #000000;
 }
 
 /*  End Character Information Box  */
@@ -31,9 +50,10 @@ input[type="text"]{
 #attributes input[type="text"]{
 	width:35px;
 	padding: 5px;
+	border: 3px solid #000000;
 }
 
-label {
+#attributes label {
 	
 	display: inline-block;
 	min-width: 100px;
@@ -42,3 +62,20 @@ label {
 }
 
 /* End Attribute Box */
+
+/* Start Weapons Box */
+.weapon label {
+	
+	display: inline-block;
+	min-width: 50px;
+	text-align: right;
+	margin-right: 10px;
+}
+
+.weapon input[type='text']{
+	width:35px;
+	padding: 5px;
+	border: 3px solid #000000;
+}
+
+/* End Weapons Box */

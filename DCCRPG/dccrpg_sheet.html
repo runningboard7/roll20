@@ -1,19 +1,122 @@
 <link rel='stylesheet' type='text/css' href='dccrpg_sheet.css' media='all'/>
+<div id="sheets">
+	<div id="sheet">
+		<div id='character_info'>
+			<p><span class='info_label'>Name</span><input type='text' name='char_name'></input><span class='info_label'>Title</span><input type='text' name='char_title'></input></p>
+			<p><span class='info_label'>Occupation</span><input type='text' name='char_occupation'></input><span class='info_label'>Class</span><input type='text' name='char_class'></input><span class='info_label'>Alignment</span><input type='text' name='char_alignment'></input><span class='info_label'>Speed</span><input type='text' name='char_speed'></input></p>
+		</div>
 
-<div id='character_info'>
-	<p><span class='info_label'>Name</span><input type='text' name='char_name'></input><span class='info_label'>Title</span><input type='text' name='char_title'></input></p>
-	<p><span class='info_label'>Occupation</span><input type='text' name='char_occupation'></input><span class='info_label'>Class</span><input type='text' name='char_class'></input><span class='info_label'>Alignment</span><input type='text' name='char_alignment'></input><span class='info_label'>Speed</span><input type='text' name='char_speed'></input></p>
-	<span class='info_label'>Level</span><input type='text' name='char_level'></input><span class='info_label'>XP</span><input type='text' name='char_experience'></input>
-</div>
+		<div id = 'statuses'>
+			<p class = 'status'><label>HP:</label><input type='text' name='attr_hp_current'/> <input type='text' name='attr_hp_total'/></p>
+			<p class = 'status'><label>AC:</label><input type='text' name='attr_ac'/>
+		</div>
 
-<div id='attributes'>
+		<div id='attributes'>
 
-		<p class='attribute'><label>Strength:</label><input type='text' name='attr_strength'/> <input type='text' name='mod_strength'></p>
-		
-		<p class='attribute'><label>Agility:</label><input type='text' name='attr_agility'/> <input type='text' name='mod_agility'></p>
-		<p class='attribute'><label>Stamina:</label><input type='text' name='attr_stamina'/> <input type='text' name='mod_stamina'></p>
-		<p class='attribute'><label>Personality:</label><input type='text' name='attr_personality'/> <input type='text' name='mod_personality'></p>
-		<p class='attribute'><label>Intelligence:</label><input type='text' name='attr_intelligence'/> <input type='text' name='mod_intelligence'></p>
-		<p class='attribute'><label>Luck: </label><input type='text' name='attr_luck'/> <input type='text' name='mod_luck'></p>
-</div>
+				<p class='attribute'><label>Strength:</label><input type='text' name='attr_strength'/> <input type='text' name='attr_mod_strength'></p>
+				
+				<p class='attribute'><label>Agility:</label><input type='text' name='attr_agility'/> <input type='text' name='attr_mod_agility'><label>Reflex</label><input type='text' name='attr_reflex'></p>
+				<p class='attribute'><label>Stamina:</label><input type='text' name='attr_stamina'/> <input type='text' name='attr_mod_stamina'><label>Fortitude</label><input type='text' name='attr_fortitude'></p>
+				<p class='attribute'><label>Personality:</label><input type='text' name='attr_personality'/> <input type='text' name='attr_mod_personality'><label>Will</label><input type='text' name='attr_will'></p>
+				<p class='attribute'><label>Intelligence:</label><input type='text' name='attr_intelligence'/> <input type='text' name='attr_mod_intelligence'></p>
+				<p class='attribute'><label>Luck: </label><input type='text' name='attr_luck'/> <input type='text' name='attr_mod_luck'></p>
+		</div>
+
+		<div id='weapons'>
+			<p class='weapon'>
+				<label>Weapon</label>
+				<select>
+					<option>Ax</option>
+					<option>Battleaxe</option>
+					<option>Bow</option>
+					<option>Club</option>
+					<option>Dagger</option>			
+					<option>Hammer</option>
+					<option>Knife</option>
+					<option>Longbow</option>
+					<option>Pick</option>
+					<option>Pike</option>
+					<option>Pitchfork</option>
+					<option>Sap</option>
+					<option>Shortbow</option>
+					<option>Longsword</option>
+					<option>Spoon</option>
+					<option>Short Sword</option>
+					<option>Sledgehammer</option>
+					<option>Stick</option>
+					<option>Staff</option>
+					<option>Whip</option>
+				</select>
+				<label>Weapon +</label>
+				<input type='text' name='attr_weappon_bonus'/>
+				<label>Att +</label>
+				<input type='text' name='attr_attack_bonus'/>
+			</p>
+			<p class='weapon'>
+				<label>Weapon</label>
+				<select>
+					<option>Ax</option>
+					<option>Battleaxe</option>
+					<option>Bow</option>
+					<option>Club</option>
+					<option>Dagger</option>			
+					<option>Hammer</option>
+					<option>Knife</option>
+					<option>Longbow</option>
+					<option>Pick</option>
+					<option>Pike</option>
+					<option>Pitchfork</option>
+					<option>Sap</option>
+					<option>Shortbow</option>
+					<option>Longsword</option>
+					<option>Spoon</option>
+					<option>Short Sword</option>
+					<option>Sledgehammer</option>
+					<option>Stick</option>
+					<option>Staff</option>
+					<option>Whip</option>
+				</select>
+				<label>Weapon +</label>
+				<input type='text' name='attr_weappon_bonus'/>
+				<label>Att +</label>
+				<input type='text' name='attr_attack_bonus'/>
+			</p>			
+			<p class='weapon'>
+				<label>Weapon</label>
+				<select>
+					<option>Ax</option>
+					<option>Battleaxe</option>
+					<option>Bow</option>
+					<option>Club</option>
+					<option>Dagger</option>			
+					<option>Hammer</option>
+					<option>Knife</option>
+					<option>Longbow</option>
+					<option>Pick</option>
+					<option>Pike</option>
+					<option>Pitchfork</option>
+					<option>Sap</option>
+					<option>Shortbow</option>
+					<option>Longsword</option>
+					<option>Spoon</option>
+					<option>Short Sword</option>
+					<option>Sledgehammer</option>
+					<option>Stick</option>
+					<option>Staff</option>
+					<option>Whip</option>
+				</select>
+				<label>Weapon +</label>
+				<input type='text' name='attr_weappon_bonus'/>
+				<label>Att +</label>
+				<input type='text' name='attr_attack_bonus'/>
+			</p>
+		</div>
+
+		<div id='notes'>
+			<p class='note'><label>Notes:</label><input type='textarea' /></p>
+			<p class='note'><label>Equipment:</label><input type='textarea'/></p>
+			<p class='note'><label>XP:</label><input type='text'></p>
+		</div>
+	</div>
+</div
 
